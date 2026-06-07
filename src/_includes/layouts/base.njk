@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}" />
+    <link rel="stylesheet" href="/assets/css/tokens.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">{{ site.title }}</a>
+      </nav>
+    </header>
+
+    <main>{{ content | safe }}</main>
+
+    <footer>
+      <p>&copy; {% year %} {{ site.title }}</p>
+    </footer>
+  </body>
+</html>
