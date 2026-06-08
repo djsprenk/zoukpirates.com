@@ -26,13 +26,53 @@ description: Meet the Zouk Pirates — the Boston-based trio behind the events.
       {% if member.social %}
       <ul class="crew-card-social">
         {% if member.social.instagram %}
-        <li><a href="{{ member.social.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
+        <li>
+          <a
+            href="{{ member.social.instagram }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
         {% endif %} {% if member.social.facebook %}
-        <li><a href="{{ member.social.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+        <li>
+          <a
+            href="{{ member.social.facebook }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
         {% endif %} {% if member.social.mixcloud %}
-        <li><a href="{{ member.social.mixcloud }}" target="_blank" rel="noopener">Mixcloud</a></li>
+        <li>
+          <a
+            href="{{ member.social.mixcloud }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="Mixcloud"
+          >
+            <i class="fa-brands fa-mixcloud" aria-hidden="true"></i>
+          </a>
+        </li>
         {% endif %} {% if member.social.youtube %}
-        <li><a href="{{ member.social.youtube }}" target="_blank" rel="noopener">YouTube</a></li>
+        <li>
+          <a
+            href="{{ member.social.youtube }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+        </li>
         {% endif %}
       </ul>
       {% endif %}

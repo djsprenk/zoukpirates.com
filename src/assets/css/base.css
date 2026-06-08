@@ -304,8 +304,24 @@ header nav a:hover {
   margin: auto 0 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
-  font-size: 0.875rem;
+  gap: 0.25rem;
+}
+
+.crew-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--color-purple-dark);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.crew-social-link:hover {
+  color: var(--color-pink-dark);
 }
 
 /* Main */
