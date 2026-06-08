@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Alkisti Rouvas",
+    "role": "Organizer",
+    "bio": "The intrepid organizer behind Zouk Pirates events, charting our path across the Zouk seas.",
+    "social": {
+      "instagram": "https://www.instagram.com/kistirouv"
+    }
+  },
+  {
+    "name": "Bryn Nugent",
+    "role": "Instructor",
+    "bio": "Bryn heads <a href=\"https://www.leviathan-zouk.com/\">Leviathan Zouk</a> and Zouk Babes Boston while overseeing the Zouk Pirates dance curriculum. Loves neon and unicorns.",
+    "social": {
+      "instagram": "https://www.instagram.com/brynjn",
+      "facebook": "https://www.facebook.com/brynnugent",
+      "youtube": "https://www.youtube.com/@brynnugent"
+    }
+  },
+  {
+    "name": "Nathan Sprenkle",
+    "role": "DJ",
+    "aka": "DJ Sprenk",
+    "bio": "Excellent at pushing buttons.",
+    "social": {
+      "instagram": "https://www.instagram.com/djsprenk",
+      "facebook": "https://www.facebook.com/djsprenk",
+      "mixcloud": "https://www.mixcloud.com/djsprenk"
+    }
+  }
+]

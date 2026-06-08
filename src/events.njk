@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+title: Events
+description: Find out where the Zouk Pirates crew will be next!
+---
+
+{% set upcomingEvents = events | rejectattr("past") %} {% set pastEvents = events | selectattr("past") %}
+
+<h1>Events</h1>
+
+<h2>Upcoming</h2>
+{% if upcomingEvents.length %}
+<ul class="event-list">
+  {% for event in upcomingEvents %}
+  <li class="event">
+    <h3>{{ event.name }}</h3>
+    <p class="event-date">
+      {{ event.startDate }}{% if event.endDate and event.endDate != event.startDate %} – {{ event.endDate }}{% endif %}
+    </p>
+    {% if event.location %}
+    <p class="event-location">{{ event.location }}</p>
+    {% endif %} {% if event.description %}
+    <p class="event-description">{{ event.description }}</p>
+    {% endif %} {% if event.url %}<a href="{{ event.url }}">More info</a>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No upcoming events at this time. Check back soon!</p>
+{% endif %}
+
+<h2>Past Events</h2>
+{% if pastEvents.length %}
+<ul class="event-list">
+  {% for event in pastEvents %}
+  <li class="event">
+    <h3>{{ event.name }}</h3>
+    <p class="event-date">
+      {{ event.startDate }}{% if event.endDate and event.endDate != event.startDate %} – {{ event.endDate }}{% endif %}
+    </p>
+    {% if event.location %}
+    <p class="event-location">{{ event.location }}</p>
+    {% endif %} {% if event.description %}
+    <p class="event-description">{{ event.description }}</p>
+    {% endif %} {% if event.url %}<a href="{{ event.url }}">More info</a>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

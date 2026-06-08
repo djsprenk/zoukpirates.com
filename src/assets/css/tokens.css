@@ -1,2 +1,10 @@
 :root {
+  --color-purple: #8d1cee;
+  --color-pink: #ff00b4;
+  --color-purple-dark: #5e0faa;
+  --color-pink-dark: #a8007a;
+  --color-bg: #fdfdfd;
+  --color-text: #1a0030;
+  --font-heading: 'Eagle Lake', serif;
+  --font-body: Georgia, serif;
 }

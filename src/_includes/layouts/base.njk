@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }} | {{ site.title }}</title>
     <meta name="description" content="{{ description or site.description }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/assets/zp-logo-simple.png" />
     <link rel="stylesheet" href="/assets/css/tokens.css" />
     <link rel="stylesheet" href="/assets/css/reset.css" />
     <link rel="stylesheet" href="/assets/css/base.css" />
@@ -12,7 +16,22 @@
   <body>
     <header>
       <nav>
-        <a href="/">{{ site.title }}</a>
+        <a href="/" class="nav-brand">
+          <img src="/assets/zp-logo-simple.png" alt="{{ site.title }}" class="nav-logo" />
+        </a>
+        <ul>
+          <li><a href="/crew/">Meet the Crew</a></li>
+          <li><a href="/events/">Events</a></li>
+          <li>
+            <a href="/policies/">Policies</a>
+            <ul>
+              <li><a href="/policies/code-of-conduct/">Code of Conduct</a></li>
+              <li><a href="/policies/no-tolerance-policy/">No Tolerance Policy</a></li>
+              <li><a href="/policies/photo-video-policy/">Photo &amp; Video Policy</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
       </nav>
     </header>
 

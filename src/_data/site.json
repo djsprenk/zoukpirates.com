@@ -1,5 +1,10 @@
 {
   "title": "Zouk Pirates",
-  "description": "Brazilian Zouk dance community",
-  "url": "https://zoukpirates.com"
+  "description": "A Boston-based trio of dancers bringing the best of Zouk to their community.",
+  "url": "https://zoukpirates.com",
+  "social": {
+    "facebook": "https://www.facebook.com/zoukpirates",
+    "instagram": "https://www.instagram.com/zoukpirates",
+    "email": "thezoukpirates@gmail.com"
+  }
 }
