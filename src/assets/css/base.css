@@ -14,6 +14,10 @@ h3 {
   font-weight: normal;
 }
 
+h1 {
+  margin-bottom: 1rem;
+}
+
 a {
   color: var(--color-pink-dark);
 }
@@ -310,6 +314,7 @@ main {
   max-width: 860px;
   margin: 0 auto;
   padding: 2rem;
+  padding-top: 3rem;
 }
 
 /* Footer */
