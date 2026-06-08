@@ -19,17 +19,15 @@
         <a href="/" class="nav-brand">
           <img src="/assets/zp-logo-simple.png" alt="{{ site.title }}" class="nav-logo" />
         </a>
-        <ul>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="/crew/">Meet the Crew</a></li>
           <li><a href="/events/">Events</a></li>
-          <li>
-            <a href="/policies/">Policies</a>
-            <ul>
-              <li><a href="/policies/code-of-conduct/">Code of Conduct</a></li>
-              <li><a href="/policies/no-tolerance-policy/">No Tolerance Policy</a></li>
-              <li><a href="/policies/photo-video-policy/">Photo &amp; Video Policy</a></li>
-            </ul>
-          </li>
+          <li><a href="/policies/">Policies</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
       </nav>
@@ -40,5 +38,20 @@
     <footer>
       <p>&copy; {% year %} {{ site.title }}</p>
     </footer>
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      toggle.addEventListener('click', () => {
+        const isOpen = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      });
+      document.querySelectorAll('.nav-links a').forEach((link) => {
+        link.addEventListener('click', () => {
+          document.body.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Open menu');
+        });
+      });
+    </script>
   </body>
 </html>
