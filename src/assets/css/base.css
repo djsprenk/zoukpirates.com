@@ -220,6 +220,90 @@ header nav a:hover {
   color: #fff;
 }
 
+/* Crew cards */
+.crew-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.crew-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 16px rgba(141, 28, 238, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.crew-card-photo {
+  aspect-ratio: 1;
+  background: linear-gradient(
+    to bottom,
+    var(--color-purple),
+    var(--color-pink)
+  );
+  overflow: hidden;
+}
+
+.crew-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.crew-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.crew-card-name {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.crew-card-aka {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  color: var(--color-purple-dark);
+  font-style: italic;
+}
+
+.crew-card-role {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-purple-dark);
+  border: 1.5px solid var(--color-purple);
+  border-radius: 999px;
+  padding: 0.2em 0.75em;
+}
+
+.crew-card-bio {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.crew-card-social {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
 /* Main */
 main {
   flex: 1;

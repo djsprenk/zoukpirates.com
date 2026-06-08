@@ -6,28 +6,37 @@ description: Meet the Zouk Pirates — the Boston-based trio behind the events.
 
 <h1>Meet the Crew</h1>
 
-<ul class="crew-list">
+<ul class="crew-grid">
   {% for member in crew %}
-  <li class="crew-member">
-    <h2>{{ member.name }}</h2>
-    {% if member.aka %}
-    <p class="crew-aka">{{ member.aka }}</p>
-    {% endif %}
-    <p class="crew-role">{{ member.role }}</p>
-    <p class="crew-bio">{{ member.bio | safe }}</p>
-    {% if member.social %}
-    <ul class="crew-social">
-      {% if member.social.instagram %}
-      <li><a href="{{ member.social.instagram }}">Instagram</a></li>
-      {% endif %} {% if member.social.facebook %}
-      <li><a href="{{ member.social.facebook }}">Facebook</a></li>
-      {% endif %} {% if member.social.mixcloud %}
-      <li><a href="{{ member.social.mixcloud }}">Mixcloud</a></li>
-      {% endif %} {% if member.social.youtube %}
-      <li><a href="{{ member.social.youtube }}">YouTube</a></li>
+  <li class="crew-card">
+    <div class="crew-card-photo">
+      {% if member.photo %}
+      <img src="{{ member.photo }}" alt="{{ member.name }}" />
       {% endif %}
-    </ul>
-    {% endif %}
+    </div>
+    <div class="crew-card-body">
+      <div>
+        <h2 class="crew-card-name">{{ member.name }}</h2>
+        {% if member.aka %}
+        <p class="crew-card-aka">{{ member.aka }}</p>
+        {% endif %}
+      </div>
+      <span class="crew-card-role">{{ member.role }}</span>
+      <p class="crew-card-bio">{{ member.bio | safe }}</p>
+      {% if member.social %}
+      <ul class="crew-card-social">
+        {% if member.social.instagram %}
+        <li><a href="{{ member.social.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
+        {% endif %} {% if member.social.facebook %}
+        <li><a href="{{ member.social.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+        {% endif %} {% if member.social.mixcloud %}
+        <li><a href="{{ member.social.mixcloud }}" target="_blank" rel="noopener">Mixcloud</a></li>
+        {% endif %} {% if member.social.youtube %}
+        <li><a href="{{ member.social.youtube }}" target="_blank" rel="noopener">YouTube</a></li>
+        {% endif %}
+      </ul>
+      {% endif %}
+    </div>
   </li>
   {% endfor %}
 </ul>
