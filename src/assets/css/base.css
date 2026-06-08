@@ -41,7 +41,7 @@ header nav {
   flex-shrink: 0;
 }
 
-.nav-logo {
+.nav-brand svg {
   height: 48px;
   width: auto;
   display: block;
@@ -186,7 +186,12 @@ header nav a:hover {
 .hero-logo {
   max-width: 250px;
   width: 100%;
+}
+
+.hero-logo svg {
+  width: 100%;
   height: auto;
+  display: block;
 }
 
 .hero-actions {

@@ -19,9 +19,7 @@
   <body>
     <header>
       <nav>
-        <a href="/" class="nav-brand">
-          <img src="/assets/zp-logo-simple.svg" alt="{{ site.title }}" class="nav-logo" />
-        </a>
+        <a href="/" class="nav-brand"> {% svg "zp-logo-simple" %} </a>
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
           <span></span>
           <span></span>
@@ -55,6 +53,59 @@
           toggle.setAttribute('aria-label', 'Open menu');
         });
       });
+
+      (function () {
+        function easeInOut(t) {
+          return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        }
+
+        function setupGradientHover(svgId, gradientId, matrixFn, yRest, yHover) {
+          const svg = document.getElementById(svgId);
+          const gradient = document.getElementById(gradientId);
+          if (!svg || !gradient) return;
+
+          let rafId,
+            startMs,
+            fromY = yRest,
+            targetY = yRest,
+            currentY = yRest;
+          const DURATION = 350;
+
+          function tick(now) {
+            const t = easeInOut(Math.min((now - startMs) / DURATION, 1));
+            currentY = fromY + (targetY - fromY) * t;
+            gradient.setAttribute('gradientTransform', matrixFn(currentY));
+            if (t < 1) rafId = requestAnimationFrame(tick);
+          }
+
+          function start(to) {
+            cancelAnimationFrame(rafId);
+            fromY = currentY;
+            startMs = performance.now();
+            targetY = to;
+            rafId = requestAnimationFrame(tick);
+          }
+
+          svg.addEventListener('mouseenter', () => start(yHover));
+          svg.addEventListener('mouseleave', () => start(yRest));
+        }
+
+        setupGradientHover(
+          'zp-logo-simple',
+          'linearGradient31',
+          (y) => `matrix(0.79999739,0,0,0.79999739,1251.9995,${y})`,
+          -251.99887,
+          -271.99887
+        );
+
+        setupGradientHover(
+          'zp-logo-wordmark',
+          'linearGradient7-8',
+          (y) => `matrix(0.79999405,0,0,0.79999405,452.00099,${y})`,
+          -251.99736,
+          -271.99736
+        );
+      })();
     </script>
   </body>
 </html>
