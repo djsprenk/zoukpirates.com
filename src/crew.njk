@@ -61,6 +61,42 @@ description: Meet the Zouk Pirates — the Boston-based trio behind the events.
             <i class="fa-brands fa-mixcloud" aria-hidden="true"></i>
           </a>
         </li>
+        {% endif %} {% if member.social.soundcloud %}
+        <li>
+          <a
+            href="{{ member.social.soundcloud }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="SoundCloud"
+          >
+            <i class="fa-brands fa-soundcloud" aria-hidden="true"></i>
+          </a>
+        </li>
+        {% endif %} {% if member.social.patreon %}
+        <li>
+          <a
+            href="{{ member.social.patreon }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="Patreon"
+          >
+            <i class="fa-brands fa-patreon" aria-hidden="true"></i>
+          </a>
+        </li>
+        {% endif %} {% if member.social.website %}
+        <li>
+          <a
+            href="{{ member.social.website }}"
+            target="_blank"
+            rel="noopener"
+            class="crew-social-link"
+            aria-label="Website"
+          >
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+        </li>
         {% endif %} {% if member.social.youtube %}
         <li>
           <a

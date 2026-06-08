@@ -14,7 +14,8 @@
     "social": {
       "instagram": "https://www.instagram.com/brynjn",
       "facebook": "https://www.facebook.com/brynnugent",
-      "youtube": "https://www.youtube.com/@brynnugent"
+      "youtube": "https://www.youtube.com/@brynnugent",
+      "website": "https://www.leviathan-zouk.com"
     }
   },
   {
@@ -25,7 +26,10 @@
     "social": {
       "instagram": "https://www.instagram.com/djsprenk",
       "facebook": "https://www.facebook.com/djsprenk",
-      "mixcloud": "https://www.mixcloud.com/djsprenk"
+      "mixcloud": "https://www.mixcloud.com/djsprenk",
+      "soundcloud": "https://soundcloud.com/djsprenk",
+      "patreon": "https://patreon.com/djsprenk",
+      "website": "https://djsprenk.com"
     }
   }
 ]
