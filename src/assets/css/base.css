@@ -41,7 +41,6 @@ header nav {
   flex-shrink: 0;
 }
 
-/* Replace with a transparent PNG to remove the white background */
 .nav-logo {
   height: 48px;
   width: auto;
@@ -172,6 +171,48 @@ header nav a:hover {
     margin: 0 1rem;
     opacity: 0.3;
   }
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.hero-logo {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  border: 2px solid var(--color-purple);
+  color: var(--color-purple-dark);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.btn:hover {
+  background: var(--color-purple);
+  color: #fff;
 }
 
 /* Main */
