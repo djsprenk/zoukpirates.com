@@ -11,7 +11,19 @@ description: Meet the Zouk Pirates — the Boston-based trio behind the events.
   <li class="crew-card">
     <div class="crew-card-photo">
       {% if member.photo %}
-      <img src="{{ member.photo }}" alt="{{ member.name }}" />
+      <img
+        src="{{ member.photo }}"
+        alt="{{ member.name }}"
+        {%
+        if
+        member.photoPosition
+        or
+        member.photoScale
+        %}style="{% if member.photoPosition %}object-position: {{ member.photoPosition }};{% endif %}{% if member.photoScale %}transform: scale({{ member.photoScale }});{% endif %}"
+        {%
+        endif
+        %}
+      />
       {% endif %}
     </div>
     <div class="crew-card-body">
