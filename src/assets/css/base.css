@@ -346,6 +346,57 @@ header nav a:hover {
   color: var(--color-pink-dark);
 }
 
+/* Events */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.event-empty {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-name {
+  margin: 0 0 0.35rem;
+}
+
+.event-artists {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  color: var(--color-purple-dark);
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.event-date,
+.event-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.event-date i,
+.event-location i {
+  color: var(--color-purple);
+  width: 1em;
+  flex-shrink: 0;
+}
+
+.event-description {
+  margin: 0.75rem 0 0;
+}
+
 /* Main */
 main {
   flex: 1;

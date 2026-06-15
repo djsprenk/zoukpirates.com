@@ -4,7 +4,8 @@ title: Events
 description: Find out where the Zouk Pirates crew will be next!
 ---
 
-{% set upcomingEvents = events | rejectattr("past") %} {% set pastEvents = events | selectattr("past") %}
+{% set upcomingEvents = events | rejectattr("past") %}
+{% set pastEvents = events | selectattr("past") %}
 
 <h1>Events</h1>
 
@@ -13,36 +14,54 @@ description: Find out where the Zouk Pirates crew will be next!
 <ul class="event-list">
   {% for event in upcomingEvents %}
   <li class="event">
-    <h3>{{ event.name }}</h3>
-    <p class="event-date">
-      {{ event.startDate }}{% if event.endDate and event.endDate != event.startDate %} – {{ event.endDate }}{% endif %}
-    </p>
-    {% if event.location %}
-    <p class="event-location">{{ event.location }}</p>
-    {% endif %} {% if event.description %}
-    <p class="event-description">{{ event.description }}</p>
-    {% endif %} {% if event.url %}<a href="{{ event.url }}">More info</a>{% endif %}
+    <h3 class="event-name">{{ event.name }}</h3>
+    {% if event.artists %}
+    <p class="event-artists">{{ event.artists | join(", ") }}</p>
+    {% endif %}
+    <div class="event-meta">
+      <p class="event-date">
+        <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+        {{ event.startDate }}{% if event.endDate and event.endDate != event.startDate %} – {{ event.endDate }}{% endif %}
+      </p>
+      {% if event.location %}
+      <p class="event-location">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        {{ event.location }}
+      </p>
+      {% endif %}
+    </div>
+    {% if event.description %}<p class="event-description">{{ event.description }}</p>{% endif %}
+    {% if event.url %}<a href="{{ event.url }}">More info</a>{% endif %}
   </li>
   {% endfor %}
 </ul>
 {% else %}
-<p>No upcoming events at this time. Check back soon!</p>
+<p class="event-empty">No upcoming events at this time. Check back soon!</p>
 {% endif %}
 
-<h2>Past Events</h2>
+<h2>Past</h2>
 {% if pastEvents.length %}
 <ul class="event-list">
   {% for event in pastEvents %}
   <li class="event">
-    <h3>{{ event.name }}</h3>
-    <p class="event-date">
-      {{ event.startDate }}{% if event.endDate and event.endDate != event.startDate %} – {{ event.endDate }}{% endif %}
-    </p>
-    {% if event.location %}
-    <p class="event-location">{{ event.location }}</p>
-    {% endif %} {% if event.description %}
-    <p class="event-description">{{ event.description }}</p>
-    {% endif %} {% if event.url %}<a href="{{ event.url }}">More info</a>{% endif %}
+    <h3 class="event-name">{{ event.name }}</h3>
+    {% if event.artists %}
+    <p class="event-artists">{{ event.artists | join(", ") }}</p>
+    {% endif %}
+    <div class="event-meta">
+      <p class="event-date">
+        <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+        {{ event.startDate }}{% if event.endDate and event.endDate != event.startDate %} – {{ event.endDate }}{% endif %}
+      </p>
+      {% if event.location %}
+      <p class="event-location">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        {{ event.location }}
+      </p>
+      {% endif %}
+    </div>
+    {% if event.description %}<p class="event-description">{{ event.description }}</p>{% endif %}
+    {% if event.url %}<a href="{{ event.url }}">More info</a>{% endif %}
   </li>
   {% endfor %}
 </ul>
