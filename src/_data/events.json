@@ -94,5 +94,37 @@
     "startDate": "March 12, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
+  },
+  {
+    "name": "Boston Leader Intensive Training with Gui Prada",
+    "artists": ["Gui Prada", "DJ Sprenk"],
+    "startDate": "December 16, 2022",
+    "location": "Salsa y Control Dance Studio · Allston",
+    "past": true
+  },
+  {
+    "name": "Starboard Social - October 2022 Edition",
+    "startDate": "October 8, 2022",
+    "location": "Salsa y Control Dance Studio · Allston",
+    "past": true
+  },
+  {
+    "name": "Starboard Social - September 2022 Edition",
+    "startDate": "September 10, 2022",
+    "location": "Mota Studio · Somerville",
+    "past": true
+  },
+  {
+    "name": "Alisson Sandi & Bryn Nugent Brazilian Zouk Weekender in Boston",
+    "artists": ["Alisson Sandi", "Bryn Nugent", "DJ Eflosa", "DJ Sprenk"],
+    "startDate": "August 12, 2022",
+    "location": "J&L Dance Studio · Malden",
+    "past": true
+  },
+  {
+    "name": "Starboard Social - July 2022 Edition",
+    "startDate": "July 9, 2022",
+    "location": "Mota Studio · Somerville",
+    "past": true
   }
 ]
