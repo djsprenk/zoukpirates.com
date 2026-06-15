@@ -1,6 +1,7 @@
 [
   {
     "name": "Leandro & Nayara Brazilian Zouk Weekender in Boston",
+    "artists": ["Leandro Nascimento", "Nayara Celestini", "DJ Sharkinho", "DJ Sprenk"],
     "startDate": "June 5, 2026",
     "endDate": "June 6, 2026",
     "location": "Salsa y Control Dance Studio · Allston",
@@ -8,78 +9,88 @@
   },
   {
     "name": "Leandro & Nayara Brazilian Zouk Weekender in Boston",
+    "artists": ["Leandro Nascimento", "Nayara Celestini", "DJ Viscious", "DJ Sprenk"],
     "startDate": "September 19, 2025",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
     "name": "Marck & Melyssa Brazilian Zouk Weekender in Boston",
+    "artists": ["Marck Silva", "Melyssa Tamada", "DJ Power", "DJ Sprenk"],
     "startDate": "May 30, 2025",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
     "name": "Leandro & Nayara Brazilian Zouk Weekender in Boston",
+    "artists": ["Leandro Nascimento", "Nayara Celestini", "DJ Sharkinho", "DJ Sprenk"],
     "startDate": "December 13, 2024",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
-    "name": "Brazilian Zouk Weekender with Alisson Sandi & Bryn Nugent",
+    "name": "Alisson Sandi & Bryn Nugent Brazilian Zouk Weekender in Boston",
+    "artists": ["Alisson Sandi", "Bryn Nugent", "DJ Sharkinho", "DJ Sprenk"],
     "startDate": "May 10, 2024",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
     "name": "Marck & Melyssa Brazilian Zouk Weekender in Boston",
+    "artists": ["Marck Silva", "Melyssa Tamada", "DJ Eflosa", "DJ Sprenk"],
     "startDate": "January 5, 2024",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
-    "name": "Starboard Social – Holiday 2023 Edition",
+    "name": "Starboard Social - December 2023 Edition",
     "startDate": "December 16, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
     "name": "The Anatomy of Comfort: 10-Hour Intensive on Body Mechanics for Brazilian Zouk with Jeremy Hale",
+    "artists": ["Jeremy Hale", "Jessica Lamdon", "DJ Swift", "DJ Sprenk"],
     "startDate": "August 11, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
     "name": "Zouk Pirates 1-Year Anniversary Weekender",
+    "artists": ["Alisson Sandi", "Christina Montoya", "Bryn Nugent", "DJ Viscious", "DJ Sprenk"],
     "startDate": "July 7, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
     "name": "Understanding and Playing with Zouk Musicality",
+    "artists": ["DJ Sprenk"],
     "startDate": "May 17, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
-    "name": "Starboard Social – May Edition",
+    "name": "Starboard Social - May 2023 Edition",
     "startDate": "May 13, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
-    "name": "Starboard Social – April Edition",
+    "name": "Starboard Social - April 2023 Edition",
     "startDate": "April 8, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
   },
   {
-    "name": "Brazilian Zouk Weekender with Alisson Sandi & Bryn Nugent Part III",
+    "name": "Alisson Sandi & Bryn Nugent Brazilian Zouk Weekender in Boston",
+    "artists": ["Alisson Sandi", "Bryn Nugent", "DJ Swift", "DJ Sprenk"],
     "startDate": "March 24, 2023",
     "location": "J&L Dance Studio · Malden",
     "past": true
   },
   {
     "name": "Tony Ma & Bryn Nugent Brazilian Zouk Head Movement Bootcamp",
+    "artists": ["Tony Ma", "Bryn Nugent"],
     "startDate": "March 12, 2023",
     "location": "Salsa y Control Dance Studio · Allston",
     "past": true
